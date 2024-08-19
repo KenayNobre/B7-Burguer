@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: "inter";
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    padding: 20px 0;
+}
+
+.logo {
+    font-family: 'Calistoga';
+    font-size: 40px;
+}
+
+.fa-bars{
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.logo span {
+    color: #FE6A0F;
+}
+
+header nav {
+    margin-left: 13%;
+}
+
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 18px;
+    margin-right: 70px;
+}
+
+header nav a:hover {
+    color: #dddddd;
+}
+
+.first-part-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.button-fazer-pedido {
+    border: 1px solid white;
+    width: 214px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.5;
+}
+
+.button-fazer-pedido:hover{
+    color: rgb(201, 201, 201);
+    border: 1px solid rgb(201, 201, 201);
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner-content,
+.banner-img {
+    width: 50%;
+
+}
+
+.banner-img {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 60px 0px 0px 0px;
+}
+
+.banner img {
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 72px;
+    font-family: "Calistoga";
+}
+
+.banner p {
+    font-size: 20px;
+    width: 80%;
+}
+
+.banner .button-fazer-pedido {
+    margin-top: 70px;
+    background-color: #FE6A0F;
+    border: none;
+    width: 300px;
+}
+
+.seach {
+    background-color: #1F1F1F;
+    width: 100%;
+    margin-top: -130px;
+    padding: 40px 0px;
+}
+
+.seach .container {
+    margin: 0 auto;
+}
+
+.seach h1 {
+    font-size: 30px;
+    font-weight: 400;
+    width: 30%;
+}
+
+.buttons-seach {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-seach {
+    width: 500px;
+    height: 80px;
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.button-seach img {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+
+}
+
+.button-seach input {
+    width: 90%;
+    height: 80%;
+    background-color: #2B2B2B;
+    border: none;
+    margin-left: 15px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.button-seach input::placeholder {
+    font-size: 18px;
+}
+
+.button-seach input:focus {
+    outline: none;
+}
+
+.seach select {
+    background-color: #2B2B2B;
+    color: #979797;
+    font-size: 18px;
+    border: none;
+    width: 500px;
+    height: 80px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0px 15px;
+}
+
+.burgues-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 60px;
+    margin: 60px 0px;
+}
+
+.burguer {
+    background-color: #2B2B2B;
+    height: 95%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.burguer:hover{
+    background-color: #272727;
+}
+
+.burguer img {
+    width: 244px;
+    margin-top: 40px;
+    margin-bottom: -35px;
+    z-index: 1;
+    align-self: center;
+}
+
+.burguer-content {
+    background-color: #1F1F1F;
+    padding: 60px 40px 40px 40px;
+    height: 100%;
+}
+
+.burguer-content p {
+    margin: 0px;
+}
+
+.burguer-content h1 {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: "Calistoga";
+    margin: 5px 0px;
+}
+
+.burguer-content span {
+    color: #FE6A0F;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    padding: 40px 0px;
+    background-color: #1F1F1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    color: #979797;
+    font-size: 18px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 1024px) {
+
+    header nav {
+        display: none;
+    }
+
+    .fa-bars{
+        font-size: 40px;
+        display: flex;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .burgues-section {
+        grid-template-columns: repeat(1, 0.5fr);
+        justify-content: center;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .button-fazer-pedido {
+        display: none;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner p {
+        width: 100%;
+    }
+
+    .banner .button-fazer-pedido {
+        width: 100%;
+    }
+
+    .seach .container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .buttons-seach {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .banner img {
+        min-width: 300px;
+        width: 70%;
+    }
+
+    .banner-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .seach {
+        margin-top: -80px;
+    }
+}
+
+@media (max-width: 965px){
+
+    .logo{
+        font-size: 22px;
+    }
+
+    .fa-bars{
+        font-size: 22px;
+    }
+
+    .banner-content h1{
+        font-size: 35px;
+    }
+
+    .banner-content p{
+        font-size: 15px;
+    }
+
+    .button-seach{
+        width: 100%;
+    }
+
+    .seach select {
+        width: 100%;
+    }
+
+    .banner-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner .button-fazer-pedido {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .seach .container h1{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .seach input::placeholder{
+        font-size: 15px;
+    }
+
+    .seach select {
+        font-size: 15px;
+    }
+
+    .burgues-section {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+}
