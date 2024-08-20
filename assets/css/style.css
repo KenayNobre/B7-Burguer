@@ -201,6 +201,7 @@ header nav a:hover {
 .burguer {
     background-color: #2B2B2B;
     height: 95%;
+    min-height: 410px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
